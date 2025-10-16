@@ -25,8 +25,8 @@ jobs:
 
       - name: ⚙️ Install dependencies
         run: |
-        pip install --no-cache-dir -r requirements.txt
-        pip install pytest
+          pip install --no-cache-dir -r requirements.txt
+          pip install pytest
 
       - name: 🧪 Run tests
         run: pytest -v
