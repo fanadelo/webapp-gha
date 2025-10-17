@@ -43,6 +43,11 @@ jobs:
       - name: 🧭 Set PYTHONPATH
         run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
 
+      - name: ⚙️ Install dependencies
+        run: |
+          pip install --no-cache-dir -r requirements.txt
+          pip install pytest
+
       - name: 🧪 pytest
         run: pytest -v
     
